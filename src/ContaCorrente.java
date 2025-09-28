@@ -10,6 +10,7 @@ class ContaCorrente extends Conta {
     }
 
     // Sobrescrevendo método da classe pai
+    @Override
     public void sacar(double valor) {
         if (valor > 0 && valor <= getSaldo()) {
             setSaldo(getSaldo() - valor);
